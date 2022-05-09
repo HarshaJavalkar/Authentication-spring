@@ -20,8 +20,7 @@ public class LoginController {
 	private LoginDaoService service;
 
 	@RequestMapping(method=RequestMethod.POST ,path = "authentications/login")
-	
-	public UserResLogin login(@RequestHeader("Authorization")  final String token, @RequestBody LoginForm reqLoginForm) {
+	public UserResLogin login( @RequestBody LoginForm reqLoginForm) {
 		LoginForm res = service.findOne(reqLoginForm);
 		return new UserResLogin("success");
 	} 

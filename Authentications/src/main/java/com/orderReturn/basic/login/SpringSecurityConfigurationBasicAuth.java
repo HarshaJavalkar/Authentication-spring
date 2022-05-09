@@ -1,4 +1,4 @@
-package com.orderReturn.Authentications.basic.login;
+package com.orderReturn.basic.login;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
